@@ -21,7 +21,7 @@
         "dest": "/static/$1"
       },
       {
-        "src": "/django-project/darshan/darshan/wsgi.py/app/(.*)",
+        "src": "/darshan/wsgi.py/app/(.*)",
         "dest": "darshan/wsgi.py"
       }
     ]
