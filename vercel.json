@@ -17,11 +17,11 @@
     ],
     "routes": [
       {
-        "src": "/static/style.css",
+        "src": "/static/(.*)",
         "dest": "/static/$1"
       },
       {
-        "src": "/(.*)",
+        "src": "/django-project/darshan/darshan/wsgi.py/app/(.*)",
         "dest": "darshan/wsgi.py"
       }
     ]
