@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <style>
+      h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+      }
+      p {
+        color: red;
+        font-family: courier;
+        font-size: 160%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+{% comment %} <h1>This is a heading \|| jodhpur/h1> {% endcomment %}
+{% comment %} <p>This is a paragraph.</p> {% endcomment %}
+<div class="class">{{webpage}}</div>
+<div class="class">{{clist}}</div> -->
+    {% for n in clist %}
+    <div>{{forloop.revcounter}} {{n}}</div>
+    <!-- <div>hello</div> -->
+    {% endfor %}
+
+    <br />
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+      </tr>
+      {% for s in student_details %}
+      <tr>
+        <td>{{s.name}}</td>
+        <td>{{s.phone}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
